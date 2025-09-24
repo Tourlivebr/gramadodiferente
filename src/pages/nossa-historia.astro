@@ -161,6 +161,162 @@ import Header from '../components/Header.astro';
     </div>
   </section>
 
+  <!-- FAQ Section -->
+  <section class="py-20 bg-white dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          Perguntas <span class="text-blue-600">Frequentes</span>
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Tire suas dúvidas sobre nossa história e nosso trabalho
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden">
+          <button 
+            class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            onclick="toggleFAQ('faq1')"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Quem são Amanda e Vicente?
+            </h3>
+            <svg id="faq1-icon" class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="faq1" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-600 dark:text-gray-300 pb-4">
+              Somos um casal apaixonado por Gramado. Desde 2016 vivemos experiências únicas nessa cidade e transformamos essa paixão em missão: ajudar outros viajantes a descobrirem o melhor de Gramado de forma inteligente e econômica.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden">
+          <button 
+            class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            onclick="toggleFAQ('faq2')"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Como começou a história de vocês com Gramado?
+            </h3>
+            <svg id="faq2-icon" class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="faq2" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-600 dark:text-gray-300 pb-4">
+              Tudo começou em nossa lua de mel, em 2016. Descobrimos que era possível aproveitar a cidade de um jeito diferente: curtindo cada momento com economia e praticidade, sem abrir mão da magia da experiência.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden">
+          <button 
+            class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            onclick="toggleFAQ('faq3')"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Quando decidiram compartilhar essas dicas com outras pessoas?
+            </h3>
+            <svg id="faq3-icon" class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="faq3" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-600 dark:text-gray-300 pb-4">
+              Em 2018, passamos a dividir nossas experiências nas redes sociais. Desde então, milhares de viajantes passaram a confiar em nossas dicas para montar roteiros inesquecíveis em Gramado e região.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden">
+          <button 
+            class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            onclick="toggleFAQ('faq4')"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              O que é a "Semana Economizando em Gramado"?
+            </h3>
+            <svg id="faq4-icon" class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="faq4" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-600 dark:text-gray-300 pb-4">
+              É o maior evento online dedicado a ajudar turistas a planejar sua viagem dos sonhos para Gramado gastando menos. Criamos esse projeto em 2020, e desde então já impactamos mais de 17 mil viajantes.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden">
+          <button 
+            class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            onclick="toggleFAQ('faq5')"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              O que significa "curadoria oficial da cidade"?
+            </h3>
+            <svg id="faq5-icon" class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="faq5" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-600 dark:text-gray-300 pb-4">
+              Significa que selecionamos, organizamos e validamos as melhores informações e experiências de Gramado. Não entregamos apenas dicas soltas: nossa curadoria é confiável, atualizada e pensada para que cada viajante tenha a melhor experiência possível.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden">
+          <button 
+            class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            onclick="toggleFAQ('faq6')"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Qual é o propósito do projeto?
+            </h3>
+            <svg id="faq6-icon" class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="faq6" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-600 dark:text-gray-300 pb-4">
+              Nosso propósito é simples e claro: entregar os melhores roteiros e informações para que você viva momentos inesquecíveis em Gramado, economizando até 50% na sua viagem.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden">
+          <button 
+            class="faq-button w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+            onclick="toggleFAQ('faq7')"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Por que confiar em vocês?
+            </h3>
+            <svg id="faq7-icon" class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="faq7" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-6">
+            <p class="text-gray-600 dark:text-gray-300 pb-4">
+              Porque já ajudamos mais de 17 mil viajantes a realizarem sua viagem dos sonhos em Gramado. Nossa experiência prática, nossa dedicação e nossa paixão pela cidade garantem que cada dica compartilhada seja útil, confiável e transformadora.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Call to Action - Parcerias -->
   <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-700">
     <div class="max-w-4xl mx-auto px-4 text-center text-white">
@@ -211,6 +367,37 @@ import Header from '../components/Header.astro';
     </div>
   </section>
 </BaseLayout>
+
+<script is:inline>
+  function toggleFAQ(faqId) {
+    const content = document.getElementById(faqId);
+    const icon = document.getElementById(faqId + '-icon');
+    
+    if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+      // Fechar todos os outros FAQs
+      document.querySelectorAll('.faq-content').forEach(item => {
+        if (item.id !== faqId) {
+          item.style.maxHeight = '0px';
+        }
+      });
+      
+      // Resetar todos os ícones
+      document.querySelectorAll('[id$="-icon"]').forEach(iconEl => {
+        if (iconEl.id !== faqId + '-icon') {
+          iconEl.classList.remove('rotate-180');
+        }
+      });
+      
+      // Abrir o FAQ clicado
+      content.style.maxHeight = content.scrollHeight + 'px';
+      icon.classList.add('rotate-180');
+    } else {
+      // Fechar o FAQ clicado
+      content.style.maxHeight = '0px';
+      icon.classList.remove('rotate-180');
+    }
+  }
+</script>
 
 <style>
   /* Animações personalizadas */
