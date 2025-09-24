@@ -1,0 +1,238 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+---
+
+<BaseLayout title="Nossa História - Gramado Diferente" description="Conheça a história de Amanda e Vicente, o casal que já ajudou mais de 17 mil viajantes a viverem momentos inesquecíveis em Gramado com economia e inteligência.">
+  <!-- Header -->
+  <Header />
+  <!-- Hero Section com Imagem Full Horizontal -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <div class="w-full h-full bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 opacity-90"></div>
+      <!-- Placeholder para imagem - você pode substituir por uma imagem real -->
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><defs><linearGradient id=%22grad%22 x1=%220%%22 y1=%220%%22 x2=%22100%%22 y2=%22100%%22><stop offset=%220%%22 style=%22stop-color:%23667eea;stop-opacity:1%22 /><stop offset=%22100%%22 style=%22stop-color:%23764ba2;stop-opacity:1%22 /></linearGradient></defs><rect width=%221200%22 height=%22600%22 fill=%22url(%23grad)%22/><circle cx=%22200%22 cy=%22150%22 r=%2250%22 fill=%22%23ffffff%22 opacity=%220.1%22/><circle cx=%22800%22 cy=%22400%22 r=%2280%22 fill=%22%23ffffff%22 opacity=%220.1%22/><circle cx=%221000%22 cy=%22200%22 r=%2260%22 fill=%22%23ffffff%22 opacity=%220.1%22/></svg>');">
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center text-white">
+      <div class="mb-8">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          Nossa <span class="text-yellow-300">História</span>
+        </h1>
+        <div class="w-24 h-1 bg-yellow-300 mx-auto mb-8"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-6 text-lg md:text-xl lg:text-2xl leading-relaxed">
+        <p class="font-medium">
+          Somos <strong class="text-yellow-300">Amanda e Vicente</strong>, um casal que ama Gramado e que, através do nosso conteúdo, já ajudou mais de <strong class="text-yellow-300">17 mil viajantes</strong> a viverem momentos inesquecíveis nesta cidade encantadora, a nossa Europa brasileira.
+        </p>
+
+        <p>
+          Nossa história com Gramado começou em <strong class="text-yellow-300">2016</strong>, na lua de mel. Ali descobrimos que era possível aproveitar tudo o que a cidade oferece de uma forma diferente: com economia e inteligência, sem perder a magia da experiência.
+        </p>
+
+        <p>
+          Em <strong class="text-yellow-300">2018</strong>, decidimos compartilhar esse aprendizado nas redes sociais, ajudando pessoas a montarem seus roteiros com praticidade. Já em <strong class="text-yellow-300">2020</strong>, criamos a Semana Economizando em Gramado, o maior evento online sobre como planejar a viagem dos sonhos para Gramado gastando menos.
+        </p>
+
+        <p class="text-xl md:text-2xl lg:text-3xl font-semibold text-yellow-300 pt-4">
+          Hoje, seguimos pioneiros em levar informação e curadoria oficial da cidade pela internet. Nosso propósito é simples e claro: entregar o melhor roteiro de Gramado para você viver momentos inesquecíveis com até 50% de economia.
+        </p>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          Nossa <span class="text-blue-600">Jornada</span>
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Uma linha do tempo dos momentos mais importantes da nossa trajetória
+        </p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="relative">
+        <!-- Linha Central -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-600 hidden md:block"></div>
+
+        <!-- Timeline Items -->
+        <div class="space-y-12 md:space-y-16">
+          <!-- 2016 - Lua de Mel -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-8 text-center md:text-right">
+              <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div class="text-3xl font-bold text-blue-600 mb-2">2016</div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">O Começo de Tudo</h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Nossa primeira viagem a Gramado na lua de mel. Descobrimos que era possível aproveitar a cidade de forma inteligente e econômica, sem perder a magia da experiência.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Timeline Dot -->
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900"></div>
+            
+            <div class="md:w-1/2 md:pl-8"></div>
+          </div>
+
+          <!-- 2018 - Redes Sociais -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-8"></div>
+            
+            <!-- Timeline Dot -->
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900"></div>
+            
+            <div class="md:w-1/2 md:pl-8 text-center md:text-left">
+              <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div class="text-3xl font-bold text-blue-600 mb-2">2018</div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Compartilhando Conhecimento</h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Decidimos compartilhar nosso aprendizado nas redes sociais, ajudando pessoas a montarem seus roteiros com praticidade e economia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2020 - Semana Economizando -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-8 text-center md:text-right">
+              <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div class="text-3xl font-bold text-blue-600 mb-2">2020</div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Maior Evento Online</h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Criamos a "Semana Economizando em Gramado", o maior evento online sobre como planejar a viagem dos sonhos para Gramado gastando menos.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Timeline Dot -->
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900"></div>
+            
+            <div class="md:w-1/2 md:pl-8"></div>
+          </div>
+
+          <!-- Hoje - Pioneiros -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-8"></div>
+            
+            <!-- Timeline Dot -->
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-500 rounded-full border-4 border-white dark:border-gray-900"></div>
+            
+            <div class="md:w-1/2 md:pl-8 text-center md:text-left">
+              <div class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-6 shadow-lg border border-blue-200 dark:border-gray-600">
+                <div class="text-3xl font-bold text-yellow-600 mb-2">Hoje</div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Pioneiros Digitais</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Seguimos pioneiros em levar informação e curadoria oficial da cidade pela internet, com mais de 17 mil viajantes ajudados.
+                </p>
+                <div class="flex items-center justify-center md:justify-start space-x-4 text-sm text-gray-500 dark:text-gray-400">
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    17k+ viajantes
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                    </svg>
+                    50% economia
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action - Parcerias -->
+  <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-700">
+    <div class="max-w-4xl mx-auto px-4 text-center text-white">
+      <div class="mb-8">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          Vamos Trabalhar <span class="text-yellow-300">Juntos?</span>
+        </h2>
+        <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          Se você tem um negócio em Gramado ou na Serra Gaúcha e quer fazer parte da nossa curadoria, entre em contato conosco!
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div class="text-3xl mb-2">🤝</div>
+            <h3 class="font-semibold mb-2">Parcerias Estratégicas</h3>
+            <p class="text-sm text-blue-100">Conectamos seu negócio com milhares de viajantes</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div class="text-3xl mb-2">📈</div>
+            <h3 class="font-semibold mb-2">Resultados Comprovados</h3>
+            <p class="text-sm text-blue-100">Mais de 17 mil pessoas impactadas</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div class="text-3xl mb-2">⭐</div>
+            <h3 class="font-semibold mb-2">Curadoria de Qualidade</h3>
+            <p class="text-sm text-blue-100">Selecionamos apenas o melhor para nossos seguidores</p>
+          </div>
+        </div>
+
+        <a
+          href="https://wa.me/5554993723094?text=Olá! Gostaria de saber mais sobre parcerias com o Gramado Diferente. Tenho interesse em trabalhar juntos!"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-full hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.479 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          Falar sobre Parcerias
+        </a>
+
+        <p class="text-sm text-blue-200 mt-4">
+          Resposta rápida garantida • Atendimento personalizado
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Animações personalizadas */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .timeline-item {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  /* Responsividade para timeline mobile */
+  @media (max-width: 768px) {
+    .timeline-item {
+      text-align: center;
+    }
+  }
+</style>
