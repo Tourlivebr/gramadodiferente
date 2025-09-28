@@ -59,11 +59,11 @@ const passeiosReceptivo = [
         <button id="filter-todos" class="filter-btn px-4 py-2 bg-primary-600 text-white rounded-full text-sm font-medium hover:bg-primary-700 transition-colors" data-category="todos">
           Todos
         </button>
-        <button id="filter-passeios" class="filter-btn px-4 py-2 bg-neutral-200 text-secondary-700 rounded-full text-sm font-medium hover:bg-neutral-300 transition-colors dark:bg-secondary-700 dark:text-neutral-300" data-category="passeios">
-          Passeios Rurais
+        <button id="filter-receptivo" class="filter-btn px-4 py-2 bg-neutral-200 text-secondary-700 rounded-full text-sm font-medium hover:bg-neutral-300 transition-colors dark:bg-secondary-700 dark:text-neutral-300" data-category="receptivo">
+          Receptivo
         </button>
-        <button id="filter-gastronomia" class="filter-btn px-4 py-2 bg-neutral-200 text-secondary-700 rounded-full text-sm font-medium hover:bg-neutral-300 transition-colors dark:bg-secondary-700 dark:text-neutral-300" data-category="gastronomia">
-          Gastronomia
+        <button id="filter-passeios-privativos" class="filter-btn px-4 py-2 bg-neutral-200 text-secondary-700 rounded-full text-sm font-medium hover:bg-neutral-300 transition-colors dark:bg-secondary-700 dark:text-neutral-300" data-category="passeios-privativos">
+          Passeios Privativos
         </button>
       </div>
     </div>
@@ -246,8 +246,8 @@ const passeiosReceptivo = [
       const cardCategory = card.querySelector('.bg-primary-600')?.textContent.trim().toUpperCase() || '';
       
       if (category === 'todos' || 
-          (category === 'passeios' && cardCategory.includes('PASSEIOS')) ||
-          (category === 'gastronomia' && cardCategory.includes('GASTRONOMIA'))) {
+          (category === 'receptivo' && cardCategory.includes('RECEPTIVO')) ||
+          (category === 'passeios-privativos' && cardCategory.includes('PASSEIOS PRIVATIVOS'))) {
         card.style.display = '';
         visibleItems.push(card);
       } else {
